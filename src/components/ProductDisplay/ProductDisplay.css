@@ -1,0 +1,236 @@
+.static-image{
+ background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+position: relative;
+height: 70vh;
+width: 100%;
+}
+.productdisplay{
+    display: flex;
+    margin: 150px 17px;
+
+}
+.productdisplay-left{
+    display: flex;
+    gap: 17px;
+}
+.productdisplay-img-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.productdisplay-img-list img{
+    height: 163px;
+
+}
+.productdisplay-main-img{
+    width: 500px;
+    height: 500px;
+
+}
+.productdisplay-right{
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+.productdisplay-right h1{
+color: #3d3d3d;
+font-size: 40px;
+font-weight: 700;
+}
+.productdisplay-right-price{
+    display: flex;
+    margin: 40px 0px;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff4141;
+}
+.productdisplay-right-specifications{
+    margin: 40px 0px;
+    gap: 30px;
+    font-size: 24px;
+}
+.productdisplay-right button{
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.productdisplay-right-description{
+    margin:50px 170px;
+    gap: 30px;
+    font-size: 16px;
+    align-items:center;
+    text-align: justify;
+}
+.productdisplay-right-description h1{
+    margin: 10px 0px;
+}
+@media(max-width:1280px){
+    .productdisplay{
+        margin: 0px 60px;
+    }
+    .productdisplay-left{
+        gap: 10px;
+    }
+    .productdisplay-img-list{
+        gap: 10px;
+    }
+    .productdisplay-img-list img{
+        height: 120px;
+    }
+    .productdisplay-main-img{
+        width: auto;
+        height: 410px;
+    }
+    .productdisplay-right{
+        margin: 0px 30px;
+    }
+    .productdisplay-right h1{
+  font-size: 22px;
+    }
+    .productdisplay-right-price{
+  margin: 10px 0px;
+  font-size: 18px;
+    }
+    .productdisplay-right-specifications{
+        font-size: 13px;
+    }
+    .productdisplay-right button{
+        width: 150px;
+        padding: 15px 0px ;
+        margin-bottom: 20px;
+    }
+    .productdisplay-right-description{
+        margin: 60x;
+    }
+}
+@media(max-width:1024px){
+    .productdisplay{
+        margin: 0px 30px;
+    }
+    .productdisplay-left{
+        gap: 5px;
+    }
+    
+    .productdisplay-img-list img{
+        height: 80px;
+    }
+    .productdisplay-main-img{
+        width: auto;
+        height: 300px;
+    }
+    .productdisplay-right h1{
+  font-size: 18px;
+    }
+    
+    .productdisplay-right-specifications{
+        font-size: 12px;
+    }
+    .productdisplay-right button{
+        width: 120px;
+        padding: 12px 0px ;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+@media(max-width:800px){
+    .productdisplay{
+        margin: 0px 10px;
+    }
+    .productdisplay-left{
+        gap: 0px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .productdisplay-img-list{
+        flex-direction: row;
+        gap: 6px;
+    }
+    .productdisplay-img-list img{
+        height: 70px;
+    }
+    .productdisplay-main-img{
+        width: auto;
+        height: 200px;
+    }
+    .productdisplay-right h1{
+  font-size: 14px;
+    }
+    
+    .productdisplay-right-specifications{
+        font-size: 10px;
+    }
+    .productdisplay-right button{
+        width: 120px;
+        padding: 12px 0px ;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .productdisplay-right-description{
+        margin: 60px 20px;
+    }
+}
+
+
+@media(max-width:720px){
+    .productdisplay{
+        flex-direction: column;
+    }
+}
+@media(max-width:500px){
+    .productdisplay{
+       flex-direction: column;
+    }
+    .productdisplay-left{
+        gap: 3px;
+        flex-direction: row;
+        margin: auto;
+    }
+    .productdisplay-img-list{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .productdisplay-img-list img{
+        height: 75px;
+    }
+    .productdisplay-main-img{
+        height: 150px;
+      
+    }
+    .productdisplay-right{
+        margin: 5px;
+        
+    }
+    .productdisplay-right h1{
+   margin-top: 15px;
+   font-weight: 900;
+   font-size: 20px;
+    }
+    
+    .productdisplay-right-specifications{
+        font-size: 10px;
+    }
+    .productdisplay-right button{
+        width: 130px;
+        padding: 12px 0px ;
+        font-size: 15px;
+    }
+    .productdisplay-right-description{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
