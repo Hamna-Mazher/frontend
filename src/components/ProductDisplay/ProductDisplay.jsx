@@ -1,21 +1,34 @@
-import React from 'react'
+import React,{useState}from 'react'
 import './ProductDisplay.css'
 import bg from '../Assets/bg-gif.gif'
-const ProductDisplay = (props) => {
+import left from '../Assets/left-arrow.png'
+import right from  '../Assets/right-arrow.png'
+const ProductDisplay = (props,idx ) => {
+  const [slide,setSlide]= useState(0);
+  const nextSlide =() =>{
+ setSlide(slide + 1);
+  };
+  const prevSlide =() =>{
+    setSlide(slide - 1);
+  };
     const {product} =props;
   return (
     <div className="products">
       <img className='static-image' src={bg} alt="" />
     <div className='productdisplay'>
         <div className="productdisplay-left">
-          <div className="productdisplay-img-list">
+          {/* <div className="productdisplay-img-list">
             <img src={product.image} alt="" />
             <img src={product.image} alt="" />
             <img src={product.image} alt="" />
             <img src={product.image} alt="" />
-          </div>
+          </div> */}
           <div className="productdisplay-img">
-            <img className='productdisplay-main-img' src={product.image} alt="" />
+            {/* <img src={left} alt="" className=' arrow-left' onClick={prevSlide} /> */}
+            <img  className='slide' key={idx} src={product.image} alt="" />
+            {/* <img className={slide=== idx ?"slide" :"slide slide-hidden"} key={idx} src={product.image} alt="" /> */}
+            {/* <img className={slide=== idx ?"slide" :"slide slide-hidden"} key={idx} src={product.image} alt="" />
+            <img src={right}alt="" className=' arrow-right' onClick={nextSlide}/> */}
           </div>
         </div>
         <div className="productdisplay-right">
