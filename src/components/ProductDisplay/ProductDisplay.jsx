@@ -1,8 +1,9 @@
 import React,{useState}from 'react'
 import './ProductDisplay.css'
 import bg from '../Assets/bg-gif.gif'
-import left from '../Assets/left-arrow.png'
-import right from  '../Assets/right-arrow.png'
+import CustomSlider from '../CustomSlider/CustomSlider'
+import data_atv from '../Assets/data'
+
 const ProductDisplay = (props,idx ) => {
   const [slide,setSlide]= useState(0);
   const nextSlide =() =>{
@@ -24,8 +25,13 @@ const ProductDisplay = (props,idx ) => {
             <img src={product.image} alt="" />
           </div> */}
           <div className="productdisplay-img">
+          <CustomSlider>
+        {data_atv.map((item, index) => {
+          return <img key={index}  id={item.id} src={item.image} />;
+        })}
+      </CustomSlider>
             {/* <img src={left} alt="" className=' arrow-left' onClick={prevSlide} /> */}
-            <img  className='slide' key={idx} src={product.image} alt="" />
+            {/* <img  className='slide' key={idx} src={product.image} alt="" /> */}
             {/* <img className={slide=== idx ?"slide" :"slide slide-hidden"} key={idx} src={product.image} alt="" /> */}
             {/* <img className={slide=== idx ?"slide" :"slide slide-hidden"} key={idx} src={product.image} alt="" />
             <img src={right}alt="" className=' arrow-right' onClick={nextSlide}/> */}
@@ -49,7 +55,7 @@ const ProductDisplay = (props,idx ) => {
         </div>
         <button>Order an ATV</button>
         </div>
-
+        
         
     </div>
     <div className="productdisplay-right-description">

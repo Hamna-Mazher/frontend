@@ -71,10 +71,13 @@ display: flex;
 }
 @media(max-width:500px){
     .hero h2{
-        font-size: 20px;
+        font-size: 15px;
     }
     .hero-latest-btn{
-        font-size: 20px;
+        width: 130px;
+        padding: 1px 5px ;
+        font-size: 15px;
+        margin-left: 40px;
     }
     
 }

@@ -73,10 +73,16 @@
         font-size: 15px;
     }
 }
+@media(max-width:650px){
+    .footer{
+        margin-top: 350px;
+    }
+}
 @media(max-width:500px){
     .footer-links{
         gap: 10px;
         font-size: 15px;
+        margin-right: 40px;
     }
     
 }
